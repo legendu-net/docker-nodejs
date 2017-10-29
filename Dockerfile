@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update \
-    && apt-get -y --no-install-recommends install \
+    && apt-get install -y --no-install-recommends \
         nodejs npm \
     && sudo ln -s /usr/bin/nodejs /usr/bin/node \
     && apt-get autoremove \
