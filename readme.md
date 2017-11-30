@@ -10,6 +10,7 @@ NodeJS in Docker.
 
 ```
 docker run -d \
+    --log-opt max-size=50m \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_PASSWORD=`id -un` \
@@ -17,6 +18,7 @@ docker run -d \
 ```
 ```
 docker run -d \
+    --log-opt max-size=50m \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
     dclong/nodejs
