@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM dclong/ubuntu_b
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
